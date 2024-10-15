@@ -2,7 +2,9 @@
 module.exports = {
   content: [
     './src/*.{css,js,jsx,ts,tsx,vue}',
-    "public/index.html"
+    "public/index.html",
+    "public/about.html",
+    "public/contact.html"
   ],
 
   theme: {
@@ -15,6 +17,7 @@ module.exports = {
           400: "#4a4877",
           500: "#1f1e30"
         }
+
       },
       fontFamily: {
         title: ['Abril Fatface'],
@@ -23,10 +26,18 @@ module.exports = {
       },
       backgroundImage: {
         'LavenderSkies': "url('https://i.imgur.com/dEbZDos.jpeg')",
-      }
+      },
+      animation: {
+        'fade-in': 'fadeIn 1s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
 
     },
     plugins: [],
   }
 }
-

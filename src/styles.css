@@ -9,3 +9,7 @@
 .textanim {
     @apply hover:translate-x-2 hover:text-sunset-200 transition ease-out duration-1000;
 }
+
+
+
+
